@@ -3,12 +3,12 @@ package tpfinal;
 public class Partido {
 
 	private int nroPartido;
-	private String equipoLocal;
-	private String equipoVisitante;
+	private Equipo equipoLocal;
+	private Equipo equipoVisitante;
 	private int golesLocal;
 	private int golesVisitante;
 
-	public Partido(int nroPartido, String equipoLocal, String equipoVisitante, int golesLocal, int golesVisitante) {
+	public Partido(int nroPartido, Equipo equipoLocal, Equipo equipoVisitante, int golesLocal, int golesVisitante) {
 		super();
 		this.nroPartido = nroPartido;
 		this.equipoLocal = equipoLocal;
@@ -28,6 +28,14 @@ public class Partido {
 
 	public int getNroPartido() {
 		return nroPartido;
+	}
+
+	public Equipo getEquipoVisitante() {
+		return equipoVisitante;
+	}
+
+	public Equipo getEquipoLocal() {
+		return equipoLocal;
 	}
 
 }
